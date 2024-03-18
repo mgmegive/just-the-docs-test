@@ -6,3 +6,6 @@ url: https://mgstingray.github.io/just-the-docs-test/
 
 aux_links:
   Template Repository: https://github.com/mgStingray/just-the-docs-test
+
+# Color scheme supports "light" (default) and "dark"
+color_scheme: dark

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sub-parent Page
+parent: Parent Page
 nav_order: 1
 has_children: true
 ---

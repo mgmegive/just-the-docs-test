@@ -3,7 +3,6 @@ layout: default
 title: Parent Page
 nav_order: 3
 has_children: true
-permalink: /docs/parent-page
 ---
 
 # Parent Page

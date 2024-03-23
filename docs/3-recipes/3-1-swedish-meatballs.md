@@ -4,6 +4,7 @@ title: Swedish Meatballs
 nav_order: 1
 has_children: false
 parent: Recipes
+summary: a recipe for swedish meatballs
 ---
 
 # Swedish Meatballs

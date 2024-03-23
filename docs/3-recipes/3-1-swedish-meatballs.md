@@ -9,7 +9,7 @@ permalink: /docs/recipes/swedish-meatballs
 
 # Swedish Meatballs
 
-![](./img/swedish-meatballs.jpg)
+![](../../assets/images/recipes/swedish-meatballs.jpg)
 
 ## Ingredients
 - 2 slices fresh white bread

@@ -5,12 +5,11 @@ layout: default
 {{ content }}
 
 <hr>
-{% include toc_heading_custom.html %}
+NEW TOC
 <ul>
     {% for child in sorted_pages %}
     <li>
-        <a href="{{ child.url | relative_url }}">{{ child.title }}</a>{% if child.summary %} - {{ child.summary }} - {{
-        child.image }} {% endif %}
+        <a href="{{ child.url | relative_url }}">{{ child.title }}</a>{% if child.summary %} - {{ child.summary }}{% endif %}{% if child.image %} - {{child.image}}{% endif %}
     </li>
     {% endfor %}
 </ul>

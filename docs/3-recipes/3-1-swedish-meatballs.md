@@ -1,13 +1,10 @@
 ---
-layout: recipe
+layout: default
 title: Swedish Meatballs
 nav_order: 1
 has_children: false
 parent: Recipes
 summary: a recipe for swedish meatballs
-date: 2024.03.02
-author: mike
-city: ph
 ---
 
 # Swedish Meatballs

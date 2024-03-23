@@ -1,9 +1,9 @@
 ---
 layout: default
-title: swedish-meatballs
+title: Swedish Meatballs
 nav_order: 1
 has_children: false
-parent: recipes
+parent: Recipes
 permalink: /docs/recipes/swedish-meatballs
 ---
 

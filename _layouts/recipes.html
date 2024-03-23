@@ -35,7 +35,16 @@ NEW TOC 2
 <ul>
 {% for child in sorted_pages %}
   <li>
-    <a href="{{ child.url | relative_url }}">{{ child.title }}</a>{% if child.image %}<br><img src="{{ child.image }}" alt="" height="50">{% endif %}
+    <a href="{{ child.url | relative_url }}">
+        {{ child.title }}
+    </a>
+    {% if child.image %}
+        <br>
+        <a href="{{ child.url | relative_url }}">
+            href<img src="{{ child.image }}" height="50">
+        </a>
+    {% endif %}
+
   </li>
 {% endfor %}
 </ul>

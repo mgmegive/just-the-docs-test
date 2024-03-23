@@ -5,6 +5,7 @@ nav_order: 1
 has_children: false
 parent: Recipes
 summary: a recipe for swedish meatballs
+image: ../../assets/images/recipes/swedish-meatballs.jpg
 ---
 
 # Swedish Meatballs

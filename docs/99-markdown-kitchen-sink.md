@@ -184,7 +184,7 @@ Some text
 
 ### Small image
 
-![](../../assets/images/small-image.jpg)
+![](../assets/images/small-image.jpg)
 
 ### Large image
 

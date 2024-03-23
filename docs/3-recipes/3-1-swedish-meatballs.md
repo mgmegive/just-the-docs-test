@@ -4,7 +4,8 @@ title: Swedish Meatballs
 nav_order: 1
 has_children: false
 parent: Recipes
-permalink: /docs/recipes/swedish-meatballs
+date: 2024-04-04 07:07:07
+tags: [recipe]
 ---
 
 # Swedish Meatballs

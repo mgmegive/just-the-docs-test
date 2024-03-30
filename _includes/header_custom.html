@@ -1,4 +1,4 @@
-<button class="btn js-toggle-dark-mode-2">☼</button>
+<button class="btn js-toggle-dark-mode-2">☾</button>
 
 <script>
     const toggleDarkMode2 = document.querySelector(".js-toggle-dark-mode-2");
@@ -6,10 +6,10 @@
     jtd.addEvent(toggleDarkMode2, "click", function () {
         if (jtd.getTheme() === "light") {
             jtd.setTheme("dark");
-            toggleDarkMode2.textContent = "☾";
+            toggleDarkMode2.textContent = "☼";
         } else {
             jtd.setTheme("light");
-            toggleDarkMode2.textContent = "☼";
+            toggleDarkMode2.textContent = "☾";
         }
     });
 </script>

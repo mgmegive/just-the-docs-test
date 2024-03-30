@@ -2,10 +2,10 @@ title: Test Page (just the docs)
 description: A test page using "just the docs template"
 theme: just-the-docs
 
-url: https://mgstingray.github.io/just-the-docs-test/
+url: https://mgmegive.github.io/just-the-docs-test/
 
 aux_links:
-  Template Repository: https://github.com/mgStingray/just-the-docs-test
+  Template Repository: https://github.com/mgmegive/just-the-docs-test
 
 # Color scheme supports "light" (default) and "dark"
 color_scheme: dark

@@ -3,23 +3,13 @@
 <script>
     const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 
-    function setTheme(theme) {
-        document.body.classList.toggle('dark-mode', theme === 'dark');
-        localStorage.setItem('preferredTheme', theme);
-    }
-
-    function getThemeFromStorage() {
-        return localStorage.getItem('preferredTheme') || 'light';
-    }
-
-    const preferredTheme = getThemeFromStorage();
-    setTheme(preferredTheme);
-
-    toggleDarkMode.textContent = preferredTheme === 'dark' ? 'Return to the light side' : 'Preview dark color scheme';
-
-    toggleDarkMode.addEventListener('click', function () {
-        const currentTheme = getThemeFromStorage();
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
+    jtd.addEvent(toggleDarkMode, 'click', function () {
+        if (jtd.getTheme() === 'dark') {
+            jtd.setTheme('light');
+            toggleDarkMode.textContent = 'Preview dark color scheme';
+        } else {
+            jtd.setTheme('dark');
+            toggleDarkMode.textContent = 'Return to the light side';
+        }
     });
 </script>

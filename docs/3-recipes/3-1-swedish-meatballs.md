@@ -10,7 +10,7 @@ image: ../../assets/images/recipes/swedish-meatballs.jpg
 
 # Swedish Meatballs
 
-![](../../assets/images/recipes/swedish-meatballs.jpg)
+![]({{ page.image }})
 
 ## Ingredients
 - 2 slices fresh white bread

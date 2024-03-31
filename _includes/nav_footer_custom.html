@@ -1,5 +1,7 @@
 <!-- TODO: Figure out how to make this save!! -->
 
+<button class="btn js-toggle-dark-mode">☾ dark</button>
+
 <script>
     if (localStorage.getItem('theme') === 'dark') {
         jtd.setTheme('dark')
@@ -7,8 +9,6 @@
         jtd.setTheme('light')
     }
 </script>
-
-<button class="btn js-toggle-dark-mode">☾ dark</button>
 
 <script>
     const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');

@@ -1,22 +1,18 @@
 <!-- TODO: Figure out how to make this save!! -->
 
-<button class="btn js-toggle-dark-mode">theme toggle</button>
-
 <script>
-    const setDarkMode = document.querySelector('.js-toggle-dark-mode');
-    // set initial theme from local storage
     if (localStorage.getItem('theme') === 'dark') {
-        setDarkMode.textContent = '☼ light';
-        jtd.setTheme('dark');
+        jtd.setTheme('dark')
     } else {
-        jtd.setTheme('light');
-        setDarkMode.textContent = '☾ dark'
+        jtd.setTheme('light')
     }
 </script>
 
+<button class="btn js-toggle-dark-mode">☾ dark</button>
+
 <script>
     const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-    // set theme based on button click
+
     jtd.addEvent(toggleDarkMode, 'click', function () {
         if (jtd.getTheme() === 'dark') {
             jtd.setTheme('light');

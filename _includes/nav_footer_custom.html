@@ -4,12 +4,13 @@
 
 <script>
     const btnToggle = document.querySelector('.js-toggle-dark-mode');
-    btnToggle.textContent = 'new text';
 
     if (localStorage.getItem('theme') === 'dark') {
-        jtd.setTheme('dark')
+        jtd.setTheme('dark');
+        btnToggle.textContent = '☼ light';
     } else {
-        jtd.setTheme('light')
+        jtd.setTheme('light');
+        btnToggle.textContent = '☾ dark';
     }
 </script>
 

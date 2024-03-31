@@ -3,15 +3,19 @@
 <button class="btn js-toggle-dark-mode">theme toggle</button>
 
 <script>
-    const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+    const setDarkMode = document.querySelector('.js-toggle-dark-mode');
     // set initial theme from local storage
     if (localStorage.getItem('theme') === 'dark') {
-        toggleDarkMode.textContent = '☼ light';
+        setDarkMode.textContent = '☼ light';
         jtd.setTheme('dark');
     } else {
         jtd.setTheme('light');
-        toggleDarkMode.textContent = '☾ dark'
+        setDarkMode.textContent = '☾ dark'
     }
+</script>
+
+<script>
+    const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
     // set theme based on button click
     jtd.addEvent(toggleDarkMode, 'click', function () {
         if (jtd.getTheme() === 'dark') {

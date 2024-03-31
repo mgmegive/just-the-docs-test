@@ -3,6 +3,9 @@
 <button class="btn js-toggle-dark-mode">☾ dark</button>
 
 <script>
+    const btnToggle = document.querySelector('.js-toggle-dark-mode');
+    btnToggle.textContent = 'new text';
+
     if (localStorage.getItem('theme') === 'dark') {
         jtd.setTheme('dark')
     } else {

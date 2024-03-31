@@ -9,5 +9,3 @@ permalink: /
 
 This is my homepage, there are many like it but this one is mine.
 
-## Light/Dark?
-

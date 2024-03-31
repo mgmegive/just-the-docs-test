@@ -8,7 +8,7 @@ aux_links:
   Template Repository: https://github.com/mgmegive/just-the-docs-test
 
 # Color scheme supports "light" (default) and "dark"
-color_scheme: light
+color_scheme: dark
 
 # Set a path/url to a logo that will be displayed instead of the title
 logo: "/assets/images/mgm.png"

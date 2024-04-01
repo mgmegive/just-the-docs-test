@@ -1,3 +1,5 @@
+<!-- TODO get the getTheme to work on initialization, it doesn't currently appear to be working -->
+
 <button class="btn js-toggle-dark-mode">☾ dark</button>
 
 <script>
@@ -13,12 +15,14 @@
             btnToggle.textContent = '☼ Light';
             break;
         default:
-            if (jtd.getTheme() === 'dark') {
-                btnToggle.textContent = '☼ Light';
-                localStorage.setItem('theme', 'dark');
-            } else {
+            if (jtd.getTheme() === 'light') {
                 btnToggle.textContent = '☾ Dark';
                 localStorage.setItem('theme', 'light');
+                jtd.setTheme('light');
+            } else {
+                btnToggle.textContent = '☼ Light';
+                localStorage.setItem('theme', 'dark');
+                jtd.setTheme('dark');
             }
             break;
     }

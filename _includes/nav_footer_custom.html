@@ -1,16 +1,26 @@
-<!-- TODO: Figure out how to make this save!! -->
-
 <button class="btn js-toggle-dark-mode">☾ dark</button>
 
 <script>
     const btnToggle = document.querySelector('.js-toggle-dark-mode');
 
-    if (localStorage.getItem('theme') === 'dark') {
-        jtd.setTheme('dark');
-        btnToggle.textContent = '☼ light';
-    } else {
-        jtd.setTheme('light');
-        btnToggle.textContent = '☾ dark';
+    switch (localStorage.getItem('theme')) {
+        case 'light':
+            jtd.setTheme('light');
+            btnToggle.textContent = '☾ Dark';
+            break;
+        case 'dark':
+            jtd.setTheme('dark');
+            btnToggle.textContent = '☼ Light';
+            break;
+        default:
+            if (jtd.getTheme() === 'dark') {
+                btnToggle.textContent = '☼ Light';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                btnToggle.textContent = '☾ Dark';
+                localStorage.setItem('theme', 'light');
+            }
+            break;
     }
 </script>
 
@@ -20,11 +30,11 @@
     jtd.addEvent(toggleDarkMode, 'click', function () {
         if (jtd.getTheme() === 'dark') {
             jtd.setTheme('light');
-            toggleDarkMode.textContent = '☾ dark';
+            toggleDarkMode.textContent = '☾ Dark';
             localStorage.setItem('theme', 'light');
         } else {
             jtd.setTheme('dark');
-            toggleDarkMode.textContent = '☼ light';
+            toggleDarkMode.textContent = '☼ Light';
             localStorage.setItem('theme', 'dark');
         }
     });

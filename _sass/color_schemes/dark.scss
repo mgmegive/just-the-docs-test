@@ -7,7 +7,7 @@ $nav-child-link-color: lighten($link-color, 50%);
 $sidebar-color: darken($body-background-color, 3%);
 $base-button-color: darken($body-background-color, 5%);
 $btn-primary-color: #699b2c;
-$code-background-color: #31343f; // OneDarkJekyll default for syntax-one-dark-vivid
+$code-background-color: darken($body-background-color, 5%); // OneDarkJekyll default for syntax-one-dark-vivid
 $code-linenumber-color: #dee2f7; // OneDarkJekyll .nf for syntax-one-dark-vivid
 $feedback-color: darken($sidebar-color, 3%);
 $table-background-color: lighten($body-background-color, 10%);
@@ -15,4 +15,5 @@ $search-background-color: lighten($body-background-color, 5%);
 $search-result-preview-color: lighten($body-background-color, 25%);
 $border-color: lighten($body-background-color, 20%);
 
+// TODO: Find a different syntax highlighter
 @import "./vendor/OneDarkJekyll/syntax"; // this is the one-dark-vivid atom syntax theme

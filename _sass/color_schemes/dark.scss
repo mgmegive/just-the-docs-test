@@ -3,16 +3,16 @@ $body-background-color: #252d30;
 $body-heading-color: $grey-lt-000;
 $body-text-color: $grey-lt-300;
 $link-color: #699b2c;
-$nav-child-link-color: #b8cf69;
-$sidebar-color: darken($body-background-color, 1%);
-$base-button-color: #151c15;
+$nav-child-link-color: lighten($link-color, 15%);
+$sidebar-color: darken($body-background-color, 3%);
+$base-button-color: darken($body-background-color, 10%);
 $btn-primary-color: #699b2c;
 $code-background-color: #31343f; // OneDarkJekyll default for syntax-one-dark-vivid
 $code-linenumber-color: #dee2f7; // OneDarkJekyll .nf for syntax-one-dark-vivid
 $feedback-color: darken($sidebar-color, 3%);
 $table-background-color: lighten($body-background-color, 10%);
 $search-background-color: lighten($body-background-color, 5%);
-$search-result-preview-color: lighten($body-background-color, 20%);
+$search-result-preview-color: lighten($body-background-color, 25%);
 $border-color: lighten($body-background-color, 20%);
 
 @import "./vendor/OneDarkJekyll/syntax"; // this is the one-dark-vivid atom syntax theme

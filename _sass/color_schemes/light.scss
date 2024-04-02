@@ -3,7 +3,7 @@ $body-background-color:  lighten(#252d30, 75%) !default;
 $body-heading-color: $grey-dk-300 !default;
 $body-text-color: $grey-dk-100 !default;
 $link-color: #699b2c !default;
-$nav-child-link-color: lighten($link-color, 50%);
+$nav-child-link-color: lighten($link-color, 10%);
 $sidebar-color: darken($body-background-color, 3%);
 $base-button-color: darken($body-background-color, 5%) !default;
 $btn-primary-color: #699b2c !default;

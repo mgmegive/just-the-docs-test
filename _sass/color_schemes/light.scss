@@ -1,0 +1,17 @@
+$color-scheme: light !default;
+$body-background-color:  lighten(#252d30, 75%) !default;
+$body-heading-color: $grey-dk-300 !default;
+$body-text-color: $grey-dk-100 !default;
+$link-color: #699b2c !default;
+$nav-child-link-color: lighten($link-color, 50%);
+$sidebar-color: darken($body-background-color, 3%);
+$base-button-color: darken($body-background-color, 5%) !default;
+$btn-primary-color: #699b2c !default;
+$code-background-color: darken($body-background-color, 5%);
+$feedback-color: darken($sidebar-color, 3%) !default;
+$table-background-color: darken($body-background-color, 10%);
+$search-background-color: darken($body-background-color, 5%);
+$search-result-preview-color: darken($body-background-color, 25%);
+$border-color: darken($body-background-color, 20%);
+
+@import "./vendor/OneLightJekyll/syntax";
